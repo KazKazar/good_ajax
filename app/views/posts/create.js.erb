@@ -1,6 +1,6 @@
 $("#mynewpost").modal('hide'); //hide modal
 $(".post_title").val(''); //clear the modal field - title
 $(".post_content").val(''); //clear the modal field - content
-//$("#container_posts").prepend(' <%= j render @post  %> '); // adding an element to the beginning of the div
+
 $("#container_posts").append(' <%= j render @post  %> '); // adding an element to the end of the div
 $("#post_<%= @post.id %>").hide().fadeIn(1000); // animation - the new element appear slowly
